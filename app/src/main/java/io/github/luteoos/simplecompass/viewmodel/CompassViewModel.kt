@@ -1,4 +1,6 @@
 package io.github.luteoos.simplecompass.viewmodel
 
-class CompassViewModel {
+import com.luteoos.kotlin.mvvmbaselib.BaseViewModel
+
+class CompassViewModel : BaseViewModel() {
 }
