@@ -20,12 +20,12 @@ android {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             resValue "string", "app_version", "$app_version"
-            resValue "string", "app_name", "Compass"
+            resValue "string", "app_name", "$app_name"
         }
         debug {
             minifyEnabled false
             resValue "string", "app_version", "$app_version-debug"
-            resValue "string", "app_name", "Compass - debug"
+            resValue "string", "app_name", "$app_name - debug"
         }
     }
 }
