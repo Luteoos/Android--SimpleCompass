@@ -1,2 +1,7 @@
 <resources>
+    <string name="required_permission">Permission is required for app to work correctly</string>
+    <string name="retry">RETRY</string>
+    <string name="lat">Latitude</string>
+    <string name="lon">Longitude</string>
+    <string name="wrong_format">Wrong input</string>
 </resources>
