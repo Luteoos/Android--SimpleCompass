@@ -1,5 +1,8 @@
 <resources>
     <string name="required_permission">Permission is required for app to work correctly</string>
+    <string name="required_sensor">Required sensors not found\nDirection feature is unavailable</string>
+    <string name="low_accuracy_sensor">Sensor accuracy dropped\nPerform eight-shaped motion to reconfigure</string>
+    <string name="gps_disabled">GPS is disabled\nDirection determination will not be available</string>
     <string name="retry">RETRY</string>
     <string name="lat">Latitude</string>
     <string name="lon">Longitude</string>

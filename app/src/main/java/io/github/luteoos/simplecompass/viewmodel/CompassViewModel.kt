@@ -2,7 +2,6 @@ package io.github.luteoos.simplecompass.viewmodel
 
 import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.MutableLiveData
-import android.location.Location
 import com.luteoos.kotlin.mvvmbaselib.BaseViewModel
 import io.github.luteoos.simplecompass.utils.LocData
 import timber.log.Timber
@@ -41,6 +40,7 @@ class CompassViewModel : BaseViewModel() {
     }
 
     private fun updateAngle(){
-        angleToTarget.value = convertToDegree(current.getLocation().bearingTo(target.getLocation()))
+        if(target.getLocation() != null && current.getLocation() != null)
+            angleToTarget.value = convertToDegree(current.getLocation()!!.bearingTo(target.getLocation()!!))
     }
 }

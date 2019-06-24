@@ -7,6 +7,7 @@
         android:layout_height="match_parent"
 >
     <LinearLayout
+            android:id="@+id/layoutLocInput"
             android:orientation="horizontal"
             android:layout_width="0dp"
             android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent"
@@ -14,7 +15,7 @@
             android:layout_marginBottom="8dp"
             android:clickable="true"
             android:focusable="true"
-            android:focusableInTouchMode="true" android:visibility="gone" android:id="@+id/layoutLocInput">
+            android:focusableInTouchMode="true" android:visibility="gone">
         <EditText
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -32,4 +33,28 @@
                 android:layout_marginEnd="8dp"
                 android:hint="@string/lon" android:layout_weight="1"/>
     </LinearLayout>
+    <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp" app:srcCompat="@drawable/ic_compass_background"
+            android:id="@+id/bgCompass"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@id/layoutLocInput"/>
+    <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp" app:srcCompat="@drawable/ic_direction_arrow"
+            android:id="@+id/ivDirectionArrow"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@id/layoutLocInput"/>
+    <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp" app:srcCompat="@drawable/ic_target_pin"
+            android:id="@+id/ivTargetPin"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@id/layoutLocInput"/>
 </android.support.constraint.ConstraintLayout>

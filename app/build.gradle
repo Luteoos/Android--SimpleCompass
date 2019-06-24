@@ -14,6 +14,7 @@ android {
         versionCode 1
         versionName "$app_version"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.debug
     }
     buildTypes {
         release {
